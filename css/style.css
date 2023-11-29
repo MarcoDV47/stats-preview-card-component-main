@@ -1,0 +1,121 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif; */
+
+main {
+    background-color: var(--primary-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.card {
+    background-color: var(--primary-2);
+    display: flex;
+    font-size: 15px;
+    border-radius: 10px;
+    color: var(--neutral-1);
+    max-width: 64%;
+}
+
+div.text {
+    padding: 85px;
+    font-size: 19px;
+}
+
+div.text h1 {
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 1em;
+}
+
+div.text .purple {
+    color: var(--primary-3);
+}
+
+div.text p {
+    font-family: 'Inter', sans-serif;
+    color: var(--neutral-3);
+    font-size: 16px;
+    line-height: 1.6em;
+    margin-bottom: 4em;
+    max-width: 25em;
+}
+
+ul {
+    display: flex;
+    max-width: 50%;
+}
+
+li {
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    margin: 0 30px;
+    font-weight: 100;
+}
+
+li span {
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    color: var(--neutral-2);
+}
+
+main img {
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+}
+
+picture {
+    position: relative;
+}
+
+picture::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-3);
+    opacity: 0.5;
+}
+
+.attribution {
+    position: absolute;
+    font-size: 11px;
+    text-align: center;
+    bottom: 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1000px) {
+    .card{
+        flex-direction: column-reverse;
+        min-width: 375px;
+        max-width: 100vw;
+        margin: 0 85px;
+    }
+    div.text{
+        padding: 15px;
+    }
+    div.text p{
+        max-width: 100vw;
+    }
+    img{
+        width: 100%;
+    }
+    ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+    }
+    li {
+        margin-bottom: 40px;
+        max-width: 30%;
+        text-align: center;
+    }
+}
